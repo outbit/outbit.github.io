@@ -18,9 +18,20 @@
 
         <!-- Latest compiled and minified JavaScript -->
         <script
+              src="https://code.jquery.com/jquery-3.6.0.min.js"
+              crossorigin="anonymous"></script>
+        <script
               src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
               integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
               crossorigin="anonymous"></script>
+        <script>
+        $(document).ready(function(){
+        $(".nav a").on("click", function(){ console.log("test");
+        $(".nav").find(".active").removeClass("active");
+        $(this).parent().addClass("active");
+        });
+        });
+        </script>
     </head>
     <body>
         <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -38,6 +49,7 @@
           <ul class="nav navbar-nav">
             <li class="active"><a href="#about">About</a></li>
             <li><a href="#apps">Apps</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -45,10 +57,20 @@
 
     <div class="container">
       <div class="starter-template">
-          <h2 id="about">About</h2>
+          </br>
+          </br>
           <p class="lead">
+          <h2 id="about">About</h2>
+          <p>Innovative solutions that solve real world problems.</p>
+          <h2 id="apps">Apps</h2>
+          <ul>
+              <li>iPortScan</li>
+              <li>Shottimer</li>
+              <li>Paintball Trainer</li>
+          </ul>
+          <h2 id="contact">Contact</h2>
           <address>
-          Support Email: <a href="mailto:support@outbit.com">support@outbit.com</a></br>
+          <a href="mailto:support@outbit.com">support@outbit.com</a></br>
           </address>
           </p>
       </div>
