@@ -1,2 +1,2 @@
 # outbit.github.io
-outbit.com
+Static site for outbit.com
